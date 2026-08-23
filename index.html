@@ -34,7 +34,8 @@
   body{
     background:var(--color-paper-white);
     color:var(--color-press-black);
-    font-family:var(--font-inter);
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight:500;
     -webkit-font-smoothing:antialiased;
   }
   a{color:inherit;text-decoration:none;}
@@ -254,7 +255,7 @@
 
   /* ---- LIVE STATUS STRIP ---- */
   .status-strip{
-    margin-top:44px;
+    margin-top:32px;
     display:flex;
     align-items:center;
     gap:12px;
@@ -311,6 +312,16 @@
     <h1>Tudus<br><em>builds things.</em></h1>
     <p class="tagline">Apps, tools, and a few Minecraft servers that got out of hand.</p>
 
+    <div class="status-strip" id="statusStrip">
+      <div class="avatar-wrap">
+        <img id="statusAvatar" src="" alt="">
+        <div class="presence-dot offline" id="statusDot"></div>
+      </div>
+      <div class="status-text">
+        <div class="status-name" id="statusName">Loading status…</div>
+        <div class="status-detail" id="statusDetail">Connecting to Discord</div>
+      </div>
+    </div>
   </header>
 
   <section class="section" id="projects">
@@ -324,7 +335,6 @@
       <div>
         <div class="project-name">ClassDeck</div>
         <div class="project-desc">Student productivity app — classes, deadlines, focus mode, and a pomodoro timer that actually looks nice.</div>
-        <div class="stack"><span>React</span><span>PWA</span><span>Android · Compose</span></div>
       </div>
       <span class="project-link">View</span>
     </a>
@@ -334,7 +344,6 @@
       <div>
         <div class="project-name">Wallet</div>
         <div class="project-desc">A personal expense tracker — multi-wallet, multi-currency, and recurring income.</div>
-        <div class="stack"><span>React</span><span>Multi-currency</span></div>
       </div>
       <span class="project-link">View</span>
     </a>
@@ -350,23 +359,20 @@
         <div class="contact-label">Discord</div>
         <div class="contact-value">Join Tudustech HQ<span class="arrow">→</span></div>
       </a>
+      <a href="https://discord.com/users/tudustech" class="contact-card">
+        <div class="contact-label">Discord</div>
+        <div class="contact-value">@tudustech<span class="arrow">→</span></div>
+      </a>
+      <a href="https://github.com/Tudustech-hub" class="contact-card">
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">Tudustech-hub<span class="arrow">→</span></div>
+      </a>
       <a href="mailto:tudustech@yahoo.com" class="contact-card">
         <div class="contact-label">Email</div>
         <div class="contact-value">tudustech@yahoo.com<span class="arrow">→</span></div>
       </a>
     </div>
   </section>
-
-  <div class="status-strip" id="statusStrip">
-    <div class="avatar-wrap">
-      <img id="statusAvatar" src="" alt="">
-      <div class="presence-dot offline" id="statusDot"></div>
-    </div>
-    <div class="status-text">
-      <div class="status-name" id="statusName">Loading status…</div>
-      <div class="status-detail" id="statusDetail">Connecting to Discord</div>
-    </div>
-  </div>
 
   <footer>
     <span>Tudustech © 2026</span>

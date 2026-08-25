@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassDeck Beta</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #ffffff;
+      color: #0a0a0a;
+      font-family: 'Inter', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 46px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+
+    p.sub {
+      font-size: 14px;
+      color: #52525b;
+      line-height: 1.45;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      border: 1px solid #000000;
+      border-radius: 14px;
+      padding: 16px 18px;
+      background: #ffffff;
+    }
+
+    .num {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #71717a;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-text {
+      font-size: 13px;
+      color: #52525b;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 11px 14px;
+      border-radius: 8px;
+      border: 1px solid #000000;
+      background: #0a0a0a;
+      color: #ffffff;
+      font-size: 13.5px;
+      font-weight: 500;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn.secondary {
+      background: #ffffff;
+      color: #0a0a0a;
+    }
+
+    .btn.secondary:hover {
+      background: #f4f4f5;
+    }
+
+    footer {
+      font-size: 12px;
+      color: #71717a;
+      text-align: center;
+      border-top: 1px solid #f4f4f5;
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>ClassDeck</h1>
+      <p class="sub">Join the Android closed beta test in 3 steps.</p>
+    </header>
+
+    <div class="list">
+      <div class="card">
+        <div class="num">Step 1</div>
+        <div class="card-title">Join Google Group</div>
+        <div class="card-text">Make sure you are signed into your Google Account in your browser.</div>
+        <a href="https://groups.google.com/g/tudustechsystems" target="_blank" class="btn">Join Group →</a>
+      </div>
+
+      <div class="card">
+        <div class="num">Step 2</div>
+        <div class="card-title">Opt-in on Google Play</div>
+        <div class="card-text">Accept the testing invitation link.</div>
+        <a href="https://play.google.com/apps/testing/com.classdeck.tudustechsystems" target="_blank" class="btn secondary">Opt-in Link →</a>
+      </div>
+
+      <div class="card">
+        <div class="num">Step 3</div>
+        <div class="card-title">Download App</div>
+        <div class="card-text">Install ClassDeck from the Play Store.</div>
+        <a href="https://play.google.com/store/apps/details?id=com.classdeck.tudustechsystems" target="_blank" class="btn secondary">Play Store Link →</a>
+      </div>
+    </div>
+
+    <footer>
+      Thanks for helping test ClassDeck.
+    </footer>
+  </div>
+
+</body>
+</html>
